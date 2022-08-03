@@ -1,0 +1,2187 @@
+:root {
+    --sf: 'SF Pro Display', 'sans-serif';
+}
+
+.white {
+    color: #fff !important;
+}
+
+
+body {
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+button {
+    font-family: var(--sf) !important;
+}
+
+button[type="button"]:hover a {
+    color: #fff !important;
+}
+
+.fa-times {
+    font-size: 25px !important;
+    cursor: pointer;
+}
+
+*,
+:after,
+:before {
+    box-sizing: inherit;
+}
+
+header {
+    background-color: #fff;
+}
+#nav-top-menu-left {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#nav-top-menu-left li a {
+    color: #666;
+    font-size: 0.875rem;
+}
+
+#nav-top-menu-left li a:hover {
+    text-decoration: underline;
+}
+
+#nav-top-menu-left li:nth-last-child(1) a:hover {
+    text-decoration: none;
+    background-color: #0056c1;
+    color: #f6f7f8 !important;
+}
+
+#nav-top-menu-left li:nth-last-child(1) a {
+    display: inline-block;
+    border: 1.5px solid #0056c1;
+    border-radius: 2.5rem;
+    color: #0056c1 !important;
+    font-weight: 500;
+    padding: 6px 12px;
+    transition: all .3s;
+}
+
+#nav-top-menu-right li a {
+    font-family: var(--sf);
+    color: #666;
+    font-size: 0.875rem;
+    display: flex;
+    align-items: center;
+}
+
+#nav-top-menu-right li a span {
+    margin-left: 5;
+}
+#nav-top-menu-right {
+    display: flex;
+    align-items: center;
+}
+#nav-top-menu-right li:nth-child(3) a {
+    font-weight: bold;
+}
+
+.srch {
+    background: url(https://abb-bank.az/img/icons/search.svg) center/cover no-repeat;
+    margin-right: 5px;
+}
+
+.srch.filter {
+    filter: invert(61%) sepia(50%) saturate(6045%) hue-rotate(181deg) brightness(85%) contrast(93%);
+    ;
+}
+
+.icon {
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+    height: 12px;
+    width: 12px;
+}
+
+.cursor-p {
+    cursor: pointer;
+}
+
+.tel {
+    background: url(https://abb-bank.az/img/icons/phone.svg) center/cover no-repeat;
+    margin-right: 3px;
+}
+
+#img1 {
+    padding-right: 60px;
+}
+
+.fas {
+    font-size: 12px;
+}
+
+#others li a {
+    font-family: var(--sf);
+    font-size: 1rem;
+    margin-left: 5px;
+}
+
+#rus {
+    background: url(https://abb-bank.az/img/icons/flag-ru.svg) center/cover no-repeat;
+}
+
+#uk {
+    background: url(https://abb-bank.az/img/icons/flag-uk.svg) center/cover no-repeat;
+}
+
+.icon-24 {
+    display: inline-block;
+    height: 24;
+    width: 24;
+}
+
+.opac0 {
+    opacity: 0;
+    transition: 1s;
+}
+
+.swiper-slide-active.opac0 {
+    opacity: 1;
+}
+
+#others::before {
+    border-color: transparent transparent #fff;
+    border-style: solid;
+    border-width: 0 7px 10px;
+    bottom: 100%;
+    content: "";
+    height: 0;
+    left: 75%;
+    position: absolute;
+    width: 0;
+}
+
+.close {
+    background: url(https://abb-bank.az/img/icons/close-light.svg) center/cover no-repeat;
+    width: 20;
+    height: 20;
+    cursor: pointer;
+}
+
+#fkk span a {
+    font-family: var(--sf);
+    color: #666;
+    font-weight: 500;
+}
+
+.line a:after {
+    color: #262626;
+    content: "/";
+    cursor: default;
+    font-size: 15px;
+    height: 20px;
+    padding: 0 10px;
+    width: 5px;
+}
+
+.icon-banking,
+.icon-banking2 {
+    background: url(https://abb-bank.az/img/icons/internet-banking-signin.svg) center/cover no-repeat;
+}
+
+.container-fluid {
+    padding-right: 0;
+}
+
+#nav-top {
+    position: fixed;
+    height: 50px;
+    top: 0;
+    z-index: 12;
+    background-color: #f6f7f8;
+    width: 100%;
+    padding-left: 40px;
+    padding-right: 10px;
+}
+
+#nav-top div:nth-child(1) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+
+#nav-top-menu-left li {
+    margin-right: 1.5rem;
+}
+
+#nav-top-menu-right>li {
+    margin-right: 1.8rem;
+}
+
+.line a:after {
+    padding: 0 15px;
+}
+
+#nav-bottom {
+    position: relative;
+    height: 75px;
+    transition: .3s;
+}
+
+#nav-bottom-menu {
+    padding-left: 50px;
+    padding-right: 40px;
+    height: 100%;
+}
+
+#nav-bottom-menu li a {
+    font-family: var(--sf);
+    position: relative;
+    color: #17253a;
+    font-size: 15;
+}
+
+#nav-bottom-menu li>span {
+    position: relative;
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.none {
+    display: none !important;
+}
+
+#nav-bottom-menu li>span:after {
+    background-color: transparent;
+    border-radius: 10px 10px 0 0;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 3px;
+    left: 0;
+    position: absolute;
+    transition: all .4s ease;
+    width: 1%;
+}
+
+#nav-bottom-menu li:hover span:after {
+    background-color: #3b8ae0;
+    transition: all .4s ease;
+    width: 100%;
+}
+
+#nav-bottom-menu li {
+    padding-right: 24px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.border-left {
+    border-left: 1px solid #a19ba150;
+    padding-left: 50px;
+    /* margin-left: 15px; */
+}
+
+.border-left div {
+    margin-top: 1rem;
+    margin-left: 3rem;
+}
+
+.border-left button a {
+    font-size: 17px;
+}
+
+.nav-sub h4 {
+    margin-bottom: 1rem;
+}
+
+.nav-sub {
+    background-color: #fff;
+    display: none;
+    position: absolute;
+    top: calc(100%);
+    left: 0;
+    width: 100%;
+    padding: 40px 70px 40px 95px;
+    box-shadow: 0 20px 30px -30px rgb(0 0 0 / 15%);
+    justify-content: space-between;
+}
+
+.nav-sub div:nth-child(1) span a {
+    font-size: 17px;
+    color: #262626;
+}
+
+.nav-sub p {
+    margin-bottom: 1.5rem;
+}
+
+.nav-sub p a {
+    font-size: 17px;
+    color: #262626;
+}
+
+#fkk a:hover {
+    transition: all .3s;
+    opacity: 1 !important;
+}
+
+#fkk {
+    margin-left: 3rem;
+}
+
+#nav-mid {
+    height: 75px;
+    padding: 0 40px;
+    border-bottom: 1px solid #f6f7f8;
+}
+
+.opacity-5 {
+    opacity: 0.5;
+}
+
+.p-lg-40 {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+#search.color {
+    color: #0056c1;
+}
+
+#search-bar {
+    justify-content: space-between;
+    background-color: #fff;
+    position: fixed;
+    left: 0;
+    top: 50px;
+    right: 0;
+    height: 150;
+    opacity: 0;
+    transition: all .3s;
+    pointer-events: none;
+    z-index: 100;
+    padding-right: 40px;
+    padding-left: 50px;
+}
+
+#search-bar.fade {
+    opacity: 1;
+    pointer-events: all;
+}
+
+#search-bar input {
+    width: 90%;
+    height: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 40px;
+    font-family: var(--sf);
+    color: #666;
+}
+
+#search-bar input::placeholder {
+    font-size: 40px;
+    font-family: var(--sf);
+}
+
+
+
+#language {
+    position: relative;
+}
+
+#others {
+    display: none;
+    background-color: #fff;
+    position: absolute;
+    margin-top: 20px;
+    margin-left: -110px;
+    box-shadow: 0 0 17px 0 #a19ba1;
+    width: 150px;
+    height: 95px;
+    flex-direction: column;
+}
+
+#others li {
+    display: flex;
+    align-items: center;
+    height: 55px;
+    padding-left: 20px;
+}
+
+#others li:hover {
+    background-color: #e4e4e463;
+}
+
+.displ-lg-none {
+    display: none;
+}
+
+header #navs {
+    position: fixed;
+    background-color: #fff;
+    width: 100%;
+    top: 50px;
+    z-index: 11;
+    transition: .3s all;
+}
+
+.button:hover a {
+    color: #fff;
+}
+
+.button a {
+    color: #262626;
+}
+
+
+/* kecidler */
+#cards .card_ {
+    border-radius: 5px;
+    margin-bottom: 1.5rem;
+}
+
+#cards .card_>div {
+    background: linear-gradient(90deg, #f5f6f7, #f0f4f9);
+    border-radius: 8px;
+
+}
+
+#cards .card_>div>div {
+    padding: 24 15 24 24;
+}
+
+#cards .card_>div>div p {
+    color: #6f7071;
+    margin-top: 4px;
+    margin-bottom: 16px;
+    line-height: 1.3;
+    font-size: 15;
+}
+
+#cards .card_>div>div h4 {
+    font-size: 18;
+    font-weight: 500;
+}
+
+#cards button a {
+    color: #fff
+}
+
+#transitions {
+    padding-top: 3rem;
+}
+
+#transitions .container {
+    padding: 3rem 12 0 12;
+}
+
+#transitions #trans_title {
+    font-weight: 600;
+    padding-bottom: 1.5rem;
+}
+
+#transitions .card_img {
+    padding: 0;
+    align-items: flex-end;
+    display: flex;
+}
+
+#transitions .card_img figure {
+    height: 100%;
+    width: 100%;
+}
+
+#transitions .card_img figure img {
+    max-width: 100%;
+    max-height: 190px;
+    object-fit: cover;
+    border-radius: 0 8px 8px 0;
+    align-self: flex-end;
+}
+
+/*  */
+
+.flex {
+    display: flex !important;
+}
+
+#bankciliq span:nth-last-child(1) {
+    font-weight: 600;
+    font-family: var(--sf);
+    margin-left: 0.5rem;
+    font-size: 15px;
+}
+
+header nav #nav-bottom ul>li>a {
+    text-align: center;
+}
+
+/* offer */
+#offer {
+    background-color: #f5f5f5;
+}
+
+#offer #cardlar {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between
+}
+
+#offer #cardlar .card {
+    padding-left: 0px;
+    padding-right: 0px;
+    width: 32%;
+    border: none;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+#offer #cardlar .card img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#offer #cardlar .card .card-body p {
+    height: 65px;
+    line-height: 21px;
+    font-size: 15px;
+    color: #666;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#offer a {
+    margin-top: 40px;
+    width: fit-content;
+    font-size: 16px;
+    color: #262626;
+    font-weight: 500;
+    display: block;
+    transition: all .3s;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+}
+
+#offer a i {
+    margin-left: 5px;
+    font-size: 12px;
+}
+
+#offer a:hover {
+    opacity: 0.5;
+    transition: all .3s;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+}
+
+
+/* exchange */
+#exchange {
+    padding: 100 120;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+#exchange>.container>div>div:nth-last-child(1) .update-time {
+    font-weight: 500;
+    color: #6f7071;
+    font-family: var(--sf);
+    margin-top: 10px;
+}
+
+#exchange>.container>div>div:nth-last-child(1) .all-valyuta a {
+    font-weight: 500;
+    font-family: var(--sf);
+    color: #262626;
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+}
+
+#exchange>.container>div>div:nth-last-child(1) .all-valyuta a::after {
+    background: url(https://abb-bank.az/img/icons/arrow-right-dark.svg) center no-repeat;
+    content: "";
+    height: inherit;
+    margin-left: 5;
+    max-height: 16px;
+    padding-left: 12px;
+    transition: all .4s ease;
+}
+
+#exchange>.container>div>div:nth-last-child(1) .all-valyuta {
+    margin-top: 10px;
+}
+
+#exchange>.container>div>div:nth-last-child(1) .all-valyuta a:hover {
+    opacity: .5;
+}
+
+#exchange>.container>div>div:nth-last-child(1) .all-valyuta i {
+    font-size: 14px;
+    margin-left: 5px;
+}
+
+#exchange>.container>div>div:nth-last-child(1) {
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#exchange>.container>div>h2 {
+    font-size: 36;
+    margin-top: 120;
+    margin-bottom: 3rem;
+    padding-bottom: 1.5rem;
+    font-weight: 600;
+}
+
+#exchange #exchange_left_box {
+    position: relative;
+    height: 240;
+    width: 70%;
+}
+
+#exchange #exchange_right_box {
+    padding-left: 1.5rem;
+    width: 50%;
+}
+
+#exchange #exchange_left_box>div>div:nth-child(2) {
+    margin-left: 140;
+}
+
+#exchange #exchange_left_box>div>div:nth-child(3) {
+    margin-left: 60;
+}
+
+#exchange #exchange_left_box>div>div p:nth-child(2) {
+    margin-top: 60;
+    font-size: 36;
+}
+
+#exchange #exchange_left_box>div>div p:nth-child(1) {
+    font-weight: 500;
+}
+
+#exchange #valyuta p:nth-child(2) {
+    font-weight: 600;
+}
+
+.border-bottom {
+    width: 90%;
+    height: 1px;
+    background-color: #6f7071;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+#exchange_right_box #convertor>h4 {
+    font-size: 24px;
+    font-weight: 500;
+    margin-top: 0;
+}
+
+#exchange_right_box #convertor #convert_inputs {
+    margin-top: 50px;
+}
+
+#exchange_right_box #convertor #convert_inputs>div {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #e4e4e4;
+    padding: 1rem 1.5rem;
+    margin-bottom: 16px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+#exchange_right_box #convertor #convert_inputs>div>div>span {
+    right: 0;
+    height: 38px;
+    border-left: 2px solid #e4e4e4;
+    display: inline-flex;
+    position: absolute;
+}
+
+#exchange_right_box #convertor #convert_inputs>div>div {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    width: 75%;
+    align-items: center;
+}
+
+#exchange_right_box #convertor #convert_inputs>div>span {
+    margin: auto;
+    text-align: center;
+    font-size: 20px;
+    font-family: var(--sf);
+}
+
+#exchange_right_box #convertor #convert_inputs>div>div>input::placeholder {
+    font-size: 20px;
+    font-family: var(--sf);
+}
+
+#exchange_right_box #convertor #convert_inputs>div>div>input {
+    border: none;
+    outline: none;
+    width: 90%;
+    font-size: 20px;
+    font-family: var(--sf);
+    color: #6f7071;
+}
+
+#exchange_up {
+    display: flex;
+    align-items: flex-start;
+}
+
+#exchange_right_box #convertor>p a {
+    display: none;
+}
+
+#exchange>.container>div>p {
+    display: none;
+}
+
+/* Two card */
+#twocard {
+    padding: 60px 0px;
+}
+
+#twocard #cardsbox #left-card {
+    display: flex;
+    background: linear-gradient(90deg, #28B3F0 9.88%, #0A95D2 92.09%);
+}
+
+#twocard #cardsbox #right-card {
+    background: linear-gradient(90deg, #6C96EA 9.88%, #4A76D2 92.09%);
+}
+
+#twocard #cardsbox>div {
+    width: 49.7%;
+    height: 400;
+    position: relative;
+    display: flex;
+}
+
+#twocard #cardsbox>div h4 {
+    font-size: 25;
+    line-height: 34px;
+    font-weight: 600;
+}
+
+#twocard #cardsbox>div>div {
+    position: relative;
+    overflow: hidden;
+}
+
+#twocard #cardsbox>div:nth-child(1) img {
+    position: absolute;
+    right: 1;
+    bottom: -25;
+    max-width: 100%;
+}
+
+#twocard #cardsbox>div:nth-child(2) img {
+    position: absolute;
+    right: 1;
+    bottom: -25;
+    max-width: 100%;
+}
+
+#twocard #cardsbox {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+#twocard #cardsbox section {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding: 50px 0px 20px 60px;
+}
+
+#twocard #cardsbox section a {
+    color: #fff;
+    font-weight: 500;
+    display: flex;
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+}
+
+#twocard #cardsbox section a:hover {
+    opacity: .7;
+}
+
+#twocard #cardsbox section a::after {
+    background: url(https://abb-bank.az/img/icons/arrow-right-dark.svg) center no-repeat;
+    content: "";
+    height: inherit;
+    margin-left: 5;
+    max-height: 16px;
+    padding-left: 12px;
+    transition: all .4s ease;
+    filter: invert(100%) sepia(93%) saturate(33%) hue-rotate(206deg) brightness(107%) contrast(100%);
+}
+
+#twocard2 {
+    display: none;
+}
+
+/* NEWS */
+
+.container-padding {
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+#anaxeber {
+    height: 70vh;
+    padding-bottom: 3rem;
+}
+
+#anaxeber .container-padding {
+    margin-top: 100px;
+}
+
+#anaxeber #xeberler {
+    font-family: var(--sf);
+    padding: 24px 15px;
+    margin-bottom: 48px;
+}
+
+#anaxeber #news div a {
+    height: 160px;
+    line-height: 29px;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: var(--sf);
+    transition: all .3s;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+}
+
+#anaxeber #news div span {
+    display: block;
+    padding: 24px 0px;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: var(--sf);
+    color: #666;
+}
+
+#anaxeber #news div:hover a {
+    color: #0A95D2;
+}
+
+#anaxeber #news div:hover {
+    border-bottom-color: #0A95D2;
+}
+
+#anaxeber #news {
+    height: 30vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+#anaxeber #news div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    width: 400px;
+    margin: 0px 15px;
+    border-bottom: 1px solid #a19ba1;
+    transition: all .3s;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+}
+
+/* partnor */
+#partnor .container {
+    padding-bottom: 8rem;
+}
+
+#partnor .container>div {
+    background: url(https://abb-bank.az/img/t_banner.png);
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    padding: 3rem 0;
+}
+
+#partnor .container>div>div {
+    max-width: 100%;
+    padding: 0.25rem 0;
+}
+
+#partnor .container>div>div>div {
+    padding: 0.25rem 0;
+    margin-left: 3rem;
+    padding-left: 1rem;
+    max-width: 60%;
+}
+
+#partnor .container>div>div>div h4 {
+    width: 100%;
+    line-height: 43px;
+    font-size: 36px;
+    font-weight: 600;
+    padding-bottom: 1rem;
+    margin-bottom: 3rem;
+    color: #fff;
+}
+
+#partnor .container>div>div>div a {
+    color: #fff;
+    font-weight: 500;
+    font-size: 15px;
+    font-family: var(--sf);
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+}
+
+#partnor .container>div>div>div a:hover {
+    opacity: 0.7;
+}
+
+#partnor .container>div>div>div a::after {
+    background: url(https://abb-bank.az/img/icons/arrow-right-dark.svg) center no-repeat;
+    content: "";
+    height: inherit;
+    margin-left: 5;
+    max-height: 16px;
+    padding-left: 12px;
+    transition: all .4s ease;
+    filter: invert(100%) sepia(93%) saturate(33%) hue-rotate(206deg) brightness(107%) contrast(100%);
+}
+
+
+/* FOOTER */
+#foot-top #foot-top-right a span:nth-child(1) {
+    background: url(https://abb-bank.az/img/icons/internet-banking-signin.svg);
+    width: 22px;
+    height: 22px;
+}
+
+#foot-top #foot-top-right a span:nth-child(2) {
+    font-weight: 600;
+    margin-left: 0.5rem;
+    font-family: var(--sf);
+    font-size: 15px;
+    color: #0056c1;
+    line-height: 17.25px;
+}
+
+footer {
+    border-top: 1px solid #e4e4e4;
+}
+
+#foot-top .foot-top-left img {
+    height: 35px;
+}
+
+#foot-bottom {
+    min-height: 100vh;
+    background-color: #f0f4f9;
+    padding-top: 50;
+}
+
+#foot-bottom .container-padding>div>div h5 {
+    font-size: 17px;
+    font-weight: 600;
+    margin-top: 1rem;
+    padding-right: 1.5rem;
+    margin-bottom: 30;
+}
+
+#foot-bottom .container-padding>div>div ul {
+    display: flex;
+    flex-direction: column;
+    padding-right: 1rem;
+}
+
+#foot-bottom .container-padding>div>div ul li {
+    font-family: var(--sf);
+    line-height: 21px;
+    margin-bottom: 1.2rem;
+    padding-right: 1.7rem;
+}
+
+#foot-bottom .container-padding>div>div ul li a {
+    font-size: 15;
+    color: #a19ba1;
+    font-weight: 400;
+}
+
+#foot-bottom .container-padding>div>div ul li a:hover {
+    text-decoration: underline;
+}
+
+#foot-bottom .container-padding>div>div:nth-last-child(1) ul li a span {
+    color: #000;
+    font-size: 17;
+    margin-left: 5px;
+    font-weight: 600;
+}
+
+#foot-bottom .container-padding>div>div:nth-last-child(1) ul li a .icon {
+    background: url(https://abb-bank.az/img/icons/phone-262626.svg);
+    height: 12px;
+    width: 12px;
+}
+
+#foot-bottom .container-padding #cont li a {
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+}
+
+/* footer markets logo */
+
+footer .markets {
+    display: flex;
+    margin-top: 2rem;
+}
+footer .markets>div a {
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    color: #666;
+    background-color: #ececec;
+    padding: 1rem;
+    display: inline-flex;
+    align-items: center;
+}
+
+#foot-bottom .markets>div {
+    margin-right: 1rem;
+}
+
+footer .markets>div a .icon-app-store {
+    filter: invert(63%) sepia(11%) saturate(0) hue-rotate(218deg) brightness(87%) contrast(100%);
+    background-image: url(https://abb-bank.az/img/icons/app-store.svg);
+}
+
+footer .markets>div a>div {
+    margin-left: 0.5rem;
+}
+
+footer .markets>div a>div span {
+    display: block;
+    font-family: var(--sf);
+    font-weight: 500;
+}
+
+footer .markets>div a>div span:nth-child(1) {
+    font-size: 9;
+}
+
+footer .markets>div a>div span:nth-child(2) {
+    font-size: 14px;
+}
+
+footer .markets>div a .icon-play-store {
+    background-image: url(https://abb-bank.az/img/icons/play-store.svg);
+    filter: invert(63%) sepia(11%) saturate(0) hue-rotate(218deg) brightness(87%) contrast(100%);
+}
+
+footer .markets>div a .icon-app-gallery {
+    filter: invert(63%) sepia(11%) saturate(0) hue-rotate(218deg) brightness(87%) contrast(100%);
+    background-image: url(https://abb-bank.az/img/icons/huawei.svg);
+}
+
+/* logos */
+footer #logos {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40 0;
+}
+
+footer .left-logo span {
+    font-size: 14px;
+    opacity: .5;
+    font-family: var(--sf);
+}
+
+footer .mid-logo a {
+    margin-right: 1rem;
+}
+
+footer .mid-logo img {
+    height: 26px;
+}
+
+footer .social-links a {
+    margin-right: 0.5rem;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f0f0;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.icon-16 {
+    height: 16px;
+    width: 16px;
+}
+
+footer .social-links a .insta {
+    background-image: url(https://abb-bank.az/img/icons/ig.svg);
+}
+
+footer .social-links a .fb {
+    background-image: url(https://abb-bank.az/img/icons/fb.svg);
+}
+
+footer .social-links a .yt {
+    background-image: url(https://abb-bank.az/img/icons/youtube.svg);
+}
+
+footer .social-links a .twit {
+    background-image: url(https://abb-bank.az/img/icons/twitter.svg);
+}
+
+footer .social-links a .linkedin {
+    background-image: url(https://abb-bank.az/img/icons/linkedin.svg);
+}
+
+footer .social-links {
+    display: flex;
+}
+
+footer #logos #right-logo {
+    display: flex;
+    align-items: center;
+}
+
+footer #logos #right-logo #right-logo-lng>ul>li {
+    position: relative;
+    margin-bottom: 0;
+}
+
+#right-logo-lng>ul>li ul {
+    position: absolute;
+    margin-top: -120;
+    padding-right: 0 !important;
+    background-color: #fff;
+    margin-left: -110px;
+    box-shadow: 0 0 17px 0 #a19ba1;
+    width: 150px;
+    height: 95px;
+    flex-direction: column;
+}
+
+#right-logo-lng>ul>li ul li {
+    display: flex;
+    align-items: center;
+    height: 55px;
+    padding-left: 20px;
+    margin-bottom: 0 !important;
+}
+
+#right-logo-lng>ul>li ul li a {
+    margin-left: 10;
+}
+
+#right-logo-lng>ul>li ul li:hover {
+    background-color: #e4e4e4;
+}
+
+.en {
+    background: url(https://abb-bank.az/img/icons/flag-uk.svg) center/cover;
+    width: 30px;
+    height: 20px;
+    display: inline-block;
+}
+
+.ru {
+    background: url(https://abb-bank.az/img/icons/flag-ru.svg) center/cover;
+    width: 30px;
+    height: 20px;
+    display: inline-block;
+}
+
+#right-logo-lng-az .arrow {
+    display: inline-block;
+    width: 10;
+    height: 10;
+}
+
+#right-logo-lng-az {
+    text-decoration: none !important;
+}
+
+.arrow::after {
+    width: 10px;
+    background: url(https://abb-bank.az/img/icons/select-arrow-down.svg) 50% no-repeat;
+    background-size: contain;
+    content: "";
+    display: inline-flex;
+    height: 100%;
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transition: all .4s ease;
+}
+
+.arrow.arrow-open::after {
+    transform: rotate(0);
+    -webkit-transform: rotate(0);
+    -moz-transform: rotate(0);
+    -ms-transform: rotate(0);
+    -o-transform: rotate(0);
+}
+
+.foot-top-right-mobile a {
+    font-size: 20;
+    display: flex;
+    align-items: center;
+    color: #666;
+    font-weight: 600;
+}
+#foot-mobile {
+    display: none;
+}
+.foot-top-right-mobile{
+    display: none;
+}
+.block {
+    display: block;
+}
+@media only screen and (max-width: 998px) {
+    #nav-mid {
+        padding: 0 15 0 10;
+    }
+    #nav-top div:nth-child(1) {
+        padding-left: 15;
+    }
+    .displ-lg-none {
+        display: block;
+    }
+    #foot-mobile #foot-top-mobile .container div img {
+        height: 38;
+        width: 154;
+    }
+    #foot-mobile #foot-top-mobile .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #foot-mobile #foot-top-mobile {
+        padding: 20 0;
+    }
+    #foot-mobile #bottom-mobile-box {
+        padding-top: 20;
+    }
+    #foot-mobile #bottom-mobile-box #lists span {
+        margin-top: 1rem;
+        display: inline-block;
+    }
+    #foot-top {
+        display: none;
+    }
+    #foot-mobile .markets>div {
+        margin-top: 1rem;
+    }
+    .foot-top-right-mobile{
+        display: block;
+    }
+    #foot-mobile {
+        display: block;
+    }
+    #foot-mobile .container-padding {
+        max-width: 720px;
+        margin: 0 auto;
+    }
+    #foot-mobile .social-links a {
+        height: 48px;
+        width: 48px;
+    }
+    #foot-mobile .social-links a span {
+        width: 20;
+        height: 20;
+    }
+    #foot-mobile .social-links {
+        margin-top: 1rem;
+    }
+    #foot-mobile .mid-logo {
+        margin-top: 1rem;
+    }
+    #foot-mobile {
+        /* padding-top: 20px; */
+        min-height: 100vh;
+    }
+    #bottom-mobile-box {
+        background-color: #f9f9f9;
+    }
+    #foot-mobile .markets{
+        margin-top: 1rem;
+        flex-wrap: wrap;
+    }
+    #foot-mobile .left-logo {
+        margin-top: 1rem;
+    }
+    #foot-mobile #contact p a {
+        font-size: 15;
+        color: #262626;
+        font-weight: 300;
+    }
+    #foot-mobile #lists span>a::after {
+        padding: 0 10px;
+        color: #666;
+        content: "/";
+        cursor: default;
+        font-size: 15px;
+        height: 20px;
+        width: 5px;
+
+    }
+    #foot-mobile #lists span:last-child a::after {
+        content: '';
+    }
+
+    #foot-mobile #lists span>a {
+        font-size: 15;
+        color: #262626;
+        font-weight: 600;
+        opacity: 0.5;
+    }
+
+    #foot-mobile .container-padding {
+        padding: 0 20;
+    }
+
+    #foot-mobile #contact {
+        margin-top: 25px;
+    }
+
+    #foot-top .container-padding {
+        padding: 0 40;
+    }
+
+    #foot-top #foot-top-right {
+        display: none;
+    }
+
+    #foot-bottom {
+        display: none;
+    }
+
+    #partnor {
+        margin-top: 15rem;
+    }
+
+    #partnor .container>div>div>div h4 {
+        margin-bottom: initial;
+        font-size: 13px;
+    }
+
+    #partnor .container>div>div>div a {
+        font-size: 13px;
+    }
+
+    #partnor .container>div>div>div {
+        padding-left: initial;
+        margin-left: 2rem;
+    }
+
+    #partnor .container>div {
+        height: 130;
+        padding: initial;
+        border-radius: 0;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        -ms-border-radius: 0;
+        -o-border-radius: 0;
+    }
+
+    #partnor .container>div>div {
+        padding: 1.2rem 0;
+    }
+
+    #partnor .container {
+        max-width: 100%;
+        padding: 0 0 8rem 0;
+    }
+
+    .container-padding {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    #anaxeber #news {
+        flex-direction: column;
+        padding: 0 20;
+    }
+
+    #anaxeber #news div {
+        width: 100%;
+        margin: 15 0;
+    }
+
+    #anaxeber #news div a {
+        height: 70px;
+        font-size: 16px;
+        line-height: 21px;
+    }
+
+    #anaxeber #news div:nth-child(1) span {
+        padding: 0 0 24 0;
+    }
+
+    #twocard {
+        display: none;
+    }
+
+    #twocard2 {
+        padding: 50px 0px;
+        display: block;
+    }
+
+    .carousel-inner {
+        height: 200px;
+    }
+
+    .carousel-indicators .active {
+        background-color: #3b8ae0 !important;
+        ;
+    }
+
+    .carousel-indicators {
+        bottom: -40;
+    }
+
+    .carousel-indicators button {
+        background-color: #666 !important;
+    }
+
+    #twocard2 #carouselExampleIndicators .carousel-inner .carousel-item .col-7 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding-left: 20px;
+        color: #fff;
+    }
+
+    #twocard2 #carouselExampleIndicators .carousel-inner .carousel-item .col-7 a {
+        color: #fff;
+        font-size: 13px;
+    }
+
+    #twocard2 #carouselExampleIndicators .carousel-inner .carousel-item .col-7 a::after {
+        background: url(https://abb-bank.az/img/icons/arrow-right-dark.svg) center no-repeat;
+        content: "";
+        height: inherit;
+        margin-left: 5;
+        max-height: 16px;
+        padding-left: 12px;
+        transition: all .4s ease;
+        filter: invert(100%) sepia(93%) saturate(33%) hue-rotate(206deg) brightness(107%) contrast(100%);
+    }
+
+    #twocard2 #carouselExampleIndicators .carousel-inner .carousel-item:nth-child(1) {
+        background: linear-gradient(90deg, #28B3F0 9.88%, #0A95D2 92.09%);
+    }
+
+    #twocard2 #carouselExampleIndicators .carousel-inner .carousel-item:nth-last-child(1) {
+        background: linear-gradient(90deg, #6C96EA 9.88%, #4A76D2 92.09%);
+    }
+
+    #twocard2 #carouselExampleIndicators .carousel-inner .carousel-item>div {
+        width: 100%;
+        height: 100%;
+    }
+
+    #twocard2 #carouselExampleIndicators .carousel-inner .carousel-item .col-5 {
+        position: relative;
+        overflow: hidden;
+        height: 100%;
+    }
+
+    #twocard2 #carouselExampleIndicators .carousel-inner .carousel-item img {
+        max-width: 100%;
+        position: absolute;
+        bottom: -12px;
+        max-height: 100%;
+        right: 0px;
+    }
+
+    #twocard2 #carouselExampleIndicators .carousel-inner .carousel-item h6 {
+        font-size: 15px;
+        line-height: 18px;
+        font-weight: 600;
+    }
+
+    #calculator>div>h2 {
+        font-size: 22;
+    }
+
+    #exchange>.container>div>h2 {
+        margin-bottom: 1rem;
+        padding-bottom: 0;
+    }
+
+    #exchange>.container>div>p {
+        display: block;
+        font-size: 13;
+        font-family: var(--sf);
+        color: #6f7071;
+        margin-bottom: 2rem;
+    }
+
+    #exchange #exchange_left_box>div>div p:nth-child(2) {
+        margin-top: 30;
+    }
+
+    #exchange {
+        padding: 0 0 100 0;
+    }
+
+    #exchange #exchange_left_box>div {
+        justify-content: space-between;
+    }
+
+    #exchange>.container>div>h2 {
+        font-size: 22px;
+    }
+
+    #exchange_right_box #convertor>p {
+        margin-top: 15px;
+    }
+
+    #exchange_right_box #convertor>p a {
+        color: #333;
+        font-family: var(--sf);
+        display: block;
+    }
+
+    #exchange_right_box #convertor>p a::after {
+        background: url(https://abb-bank.az/img/icons/arrow-right-dark.svg) center no-repeat;
+        content: "";
+        height: inherit;
+        margin-left: 5;
+        max-height: 5px;
+        padding-left: 9px;
+        transition: all .4s ease;
+    }
+
+    #exchange #exchange_left_box>div>div p:nth-child(2) {
+        font-size: 24px;
+    }
+
+    #exchange #exchange_left_box>div>div:nth-child(2) {
+        margin: 0 50;
+    }
+
+    #exchange #exchange_left_box>div>div:nth-child(3) {
+        margin: initial;
+    }
+
+    #exchange #exchange_left_box>div>div {
+        max-width: 41%;
+    }
+
+    #exchange #exchange_left_box {
+        height: fit-content;
+        width: 100%;
+    }
+
+    #exchange_right_box #convertor>h4 {
+        font-size: 20;
+        padding-left: 0;
+        margin-top: 20;
+    }
+
+    #exchange_up {
+        flex-direction: column;
+    }
+
+    #exchange_right_box #convertor #convert_inputs>div>div>input {
+        width: 90%;
+    }
+
+    #exchange_up .container>div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #exchange_right_box {
+        margin: auto;
+    }
+
+    .border-bottom {
+        width: 100%;
+    }
+
+    #exchange #exchange_right_box {
+        margin: initial;
+        width: 100%;
+        padding-left: 0;
+    }
+
+    #exchange>.container>div>div:nth-last-child(1) {
+        width: 100%;
+    }
+
+    #search-bar {
+        padding: 0 25 0 10;
+    }
+
+    #offer #cardlar {
+        flex-direction: column;
+        justify-content: center;
+        padding: 0px 15px;
+    }
+
+    #offer #cardlar .card {
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    #offer a {
+        margin-top: inherit;
+        font-size: 13px;
+    }
+
+    #offer #cardlar .card .card-body p {
+        height: inherit;
+    }
+
+    header.scroll nav #navs {
+        z-index: 1;
+        top: 50px;
+    }
+
+    #navs {
+        z-index: 11;
+        top: 50px !important;
+    }
+
+    #search-bar input::placeholder {
+        font-size: 16px;
+    }
+
+    #search-bar {
+        height: 70;
+    }
+
+    #search-bar input {
+        width: 100%;
+        height: 50%;
+        font-size: 20px;
+    }
+
+    .p-lg-40 {
+        padding-right: 20px !important;
+        padding-left: 20px !important;
+    }
+
+    .disp-md-none {
+        display: none !important;
+    }
+
+    .disp-md-block {
+        display: block;
+    }
+
+    #fkk-md>li {
+        position: relative;
+        width: 100;
+        font-family: var(--sf);
+    }
+
+    #fkk-md-child {
+        z-index: 1;
+        border: 1px solid #000;
+        position: absolute;
+        top: 100%;
+        left: -5px;
+        width: 80%;
+        background-color: #fff;
+    }
+
+    #fkk-md-child li {
+        padding: 15px 5px 15px 5px;
+
+    }
+
+    #fkk-md-child li a:active {
+        background-color: #599ee7;
+    }
+
+    #fkk-md-child li a {
+        color: #262626;
+    }
+
+    #fkk-md-child li:nth-child(1) {
+        background-color: #5cc7f5;
+    }
+
+    #nav-top {
+        padding: 0;
+        z-index: 12;
+    }
+
+    #logo img {
+        width: 154px;
+        height: 38px;
+    }
+
+    #nav-top-menu-right>li {
+        margin-right: 15px !important;
+    }
+
+    .hamburger--squeeze .hamburger-inner {
+        transition-duration: 75ms;
+        transition-timing-function: cubic-bezier(.55, .055, .675, .19);
+    }
+
+    .hamburger-inner,
+    .hamburger-inner:after,
+    .hamburger-inner:before {
+        background-color: #000;
+        border-radius: 4px;
+        height: 2px;
+        position: absolute;
+        transition-duration: .15s;
+        transition-property: transform;
+        transition-timing-function: ease;
+        width: 32px;
+    }
+
+    .hamburger-inner {
+        display: block;
+        margin-top: -2px;
+        top: 50%;
+    }
+
+    .events-none * {
+        pointer-events: none;
+    }
+
+    .hamburger-box {
+        display: inline-block;
+        height: 24px;
+        position: relative;
+        width: 32px;
+    }
+
+    .hamburger {
+        background-color: transparent;
+        border: 0;
+        color: inherit;
+        display: inline-block;
+        font: inherit;
+        margin: 0;
+        overflow: visible;
+        text-transform: none;
+        transition-duration: .15s;
+        transition-property: opacity, filter;
+        transition-timing-function: linear;
+    }
+
+    .hamburger--squeeze .hamburger-inner:before {
+        transition: top 75ms ease .12s, opacity 75ms ease;
+    }
+
+    .hamburger-inner:before {
+        top: -10px;
+    }
+
+    .hamburger-inner:after,
+    .hamburger-inner:before {
+        content: "";
+        display: block;
+    }
+
+    .hamburger-inner,
+    .hamburger-inner:after,
+    .hamburger-inner:before {
+        background-color: #000;
+        border-radius: 4px;
+        height: 2px;
+        position: absolute;
+        transition-duration: .15s;
+        transition-property: transform;
+        transition-timing-function: ease;
+        width: 32px;
+    }
+
+    .hamburger--squeeze .hamburger-inner:after {
+        transition: bottom 75ms ease .12s, transform 75ms cubic-bezier(.55, .055, .675, .19);
+    }
+
+    .hamburger-inner:after {
+        bottom: -10px;
+    }
+
+    .hamburger--squeeze.is-active .hamburger-inner {
+        transform: rotate(45deg);
+        transition-delay: .12s;
+        transition-timing-function: cubic-bezier(.215, .61, .355, 1);
+    }
+
+    .hamburger.is-active .hamburger-inner,
+    .hamburger.is-active .hamburger-inner:after,
+    .hamburger.is-active .hamburger-inner:before {
+        background-color: #000;
+    }
+
+    .hamburger--squeeze .hamburger-inner {
+        transition-duration: 75ms;
+        transition-timing-function: cubic-bezier(.55, .055, .675, .19);
+    }
+
+    .hamburger--squeeze.is-active .hamburger-inner:before {
+        opacity: 0;
+        top: 0;
+        transition: top 75ms ease, opacity 75ms ease .12s;
+    }
+
+    .hamburger.is-active .hamburger-inner,
+    .hamburger.is-active .hamburger-inner:after,
+    .hamburger.is-active .hamburger-inner:before {
+        background-color: #000;
+    }
+
+    .hamburger--squeeze.is-active .hamburger-inner:after {
+        bottom: 0;
+        transform: rotate(-90deg);
+        transition: bottom 75ms ease, transform 75ms cubic-bezier(.215, .61, .355, 1) .12s;
+    }
+
+    .hamburger.is-active .hamburger-inner,
+    .hamburger.is-active .hamburger-inner:after,
+    .hamburger.is-active .hamburger-inner:before {
+        background-color: #000;
+    }
+
+    .hamburger--squeeze .hamburger-inner {
+        transition-duration: 75ms;
+        transition-timing-function: cubic-bezier(.55, .055, .675, .19);
+    }
+
+    .icon-banking {
+        filter: invert(94%) sepia(83%) saturate(0) hue-rotate(39deg) brightness(145%) contrast(101%);
+    }
+
+    #bankciliq-two {
+        background-color: #0056c1;
+        height: 40px;
+        border-bottom: 1px solid #262626;
+        border-color: #e4e4e4 !important;
+        color: transparent;
+        transition: color .4s;
+        overflow: hidden;
+        padding: 1rem !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #bankciliq-two span:nth-child(2) {
+        margin-left: 0.5rem;
+        font-weight: 600;
+        font-family: var(--sf);
+        font-size: 15;
+        color: #0056c1;
+    }
+
+    #bankciliq-two span:nth-child(2) a {
+        color: #fff;
+    }
+
+    #burger-menu-box {
+        height: calc(100vh - 125px);
+        position: fixed;
+        top: 125px;
+        background-color: #fff;
+        width: 100vw;
+        overflow-y: scroll;
+        z-index: 99999;
+    }
+
+    .overflowx-s {
+        overflow-x: scroll;
+    }
+
+    .ws-nowrap {
+        white-space: nowrap;
+    }
+
+    #hamburger-menu-top {
+        padding: 30px 20px;
+    }
+
+    #hamburger-menu-top li a {
+        font-size: 14;
+        color: #666;
+        padding: 1rem;
+        background-color: #f9f9f9;
+        margin-right: 1rem;
+        white-space: nowrap;
+    }
+
+    .hover,
+    .hover *,
+    .hover-node,
+    .hover:hover * {
+        transition: all .4s ease;
+    }
+
+    .ws-nowrap {
+        white-space: nowrap;
+    }
+
+    .color-666 {
+        color: #666 !important;
+    }
+
+    .bg-f9f9f9 {
+        background-color: #f9f9f9;
+    }
+
+    .scroll-bar-menu {
+        background-color: #fff;
+        border-color: #e4e4e4 !important;
+        overflow-x: scroll;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .scroll-bar-menu::-webkit-scrollbar {
+        width: 14px !important;
+    }
+
+    .scroll-bar::-webkit-scrollbar-button {
+        display: none;
+        height: 0;
+        width: 0;
+    }
+
+    .scroll-bar-menu::-webkit-scrollbar-corner {
+        background-color: transparent !important;
+    }
+
+    .scroll-bar-menu::-webkit-scrollbar-thumb {
+        background-clip: content-box !important;
+        border: 6px solid transparent !important;
+        border-radius: 7px !important;
+        box-shadow: inset 0 0 0 10px !important;
+    }
+
+    .scroll-bar-menu-horizontal,
+    .scroll-bar-menu:hover {
+        color: #3b8ae0;
+    }
+
+    .scroll-bar-menu-horizontal::-webkit-scrollbar-thumb {
+        border-radius: 0;
+    }
+
+    .scroll-bar-menu-horizontal::-webkit-scrollbar-track {
+        background-color: #f0f0f0 !important;
+        border: 6px solid #fff !important;
+    }
+
+    .accordion-button-remove::after {
+        background-image: initial;
+    }
+
+    .accordion-button-remove:not(.collapsed)::after {
+        background-image: initial;
+    }
+
+    .accordion-body p {
+        margin-bottom: 0.5rem !important;
+        padding-bottom: 0.5rem !important;
+    }
+
+    .accordion-body p a {
+        color: #636363 !important;
+        font-size: 16px !important;
+    }
+
+    .accordion-button {
+        font-size: 18px;
+    }
+
+    .accordion-button:focus {
+        box-shadow: none;
+    }
+
+    .btn:focus {
+        outline: none;
+        box-shadow: none;
+    }
+
+    .accordion-button:not(.collapsed) {
+        background-color: #fff;
+        color: inherit;
+    }
+
+    .accordion-button:not(.collapsed)::after {
+        background-image: var(--bs-accordion-btn-icon);
+    }
+
+    .ml-100 {
+        transition: all .5s;
+        margin-left: 100%;
+    }
+
+    .box-left-none {
+        margin-left: 0;
+    }
+
+    .swiper-slide {
+        display: block;
+    }
+
+    .slider-left h3 {
+        font-size: 30px;
+    }
+
+    .slider-left {
+        padding-left: 0;
+    }
+
+    .slider-left h3 {
+        line-height: 35px;
+        text-align: center;
+    }
+
+    .slider-left h5 {
+        text-align: center !important;
+        line-height: 25px;
+        font-size: 15px;
+    }
+
+    .slider-right {
+        padding-right: 0;
+        padding: 0 10px !important;
+    }
+
+    .swiper-slide {
+        text-align: center;
+    }
+
+    .btn {
+        padding: 15px 25px;
+    }
+
+    .slider-right {
+        text-align: center;
+        transform: translateY(25px);
+    }
+
+    .slider-right img {
+        height: 350;
+        max-width: 100%;
+    }
+
+    #transitions {
+        padding-top: 1rem;
+    }
+
+}
+
+@media screen and (max-width: 998px) and (min-width: 435px) {
+    .slider-right {
+        text-align: center;
+        transform: translateY(50px);
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    #exchange .container>div {
+        align-items: flex-start;
+    }
+}
+
+@media (min-width:998px) {
+    header.scroll #navs {
+        top: 0;
+        z-index: 13;
+        border-bottom: 1px solid #e4e4e4;
+    }
+
+    header.scroll #nav-bottom {
+        height: 46px;
+    }
+
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1260px;
+        padding: 0;
+    }
+}
+
+@media only screen and (max-height: 507px) {
+    #partnor {
+        margin-top: 25rem;
+    }
+}

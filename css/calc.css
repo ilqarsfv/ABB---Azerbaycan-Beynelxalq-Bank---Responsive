@@ -1,0 +1,325 @@
+.slider {
+    box-shadow: 0px 3px 5px #666;
+    bottom: -1px;
+    width: 100.5%;
+    left: -2px;
+    -webkit-appearance: none;
+    height: 4px;
+    display: block;
+    outline: none;
+    border: none;
+}
+.alt1 .slider {
+    background: linear-gradient(90deg, rgb(37, 154, 238) 20%, rgb(221, 221, 221) 0%) ;
+}
+.alt2 .slider {
+    background: linear-gradient(90deg, rgb(37, 154, 238) 10%, rgb(221, 221, 221) 0%) ;
+}
+.alt3 .slider {
+    background: linear-gradient(90deg, rgb(37, 154, 238) 0%, rgb(221, 221, 221) 0%) ;
+}
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+    background: url(https://abb-bank.az/img/icons/range-handle.svg) center/cover no-repeat;
+}
+#mebleg,#muddet,#faiz {
+    width: 495px;
+    height: 74px;
+}
+
+#faiz {
+    margin-top: 3rem;
+}
+
+.slider::-moz-range-thumb {
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+    background: url(https://abb-bank.az/img/icons/range-handle.svg) center/cover no-repeat;
+}
+#output {
+    width: fit-content;
+    display: inline-block;
+    border: none;
+    outline: none;
+    margin-left: -25px;
+}
+#output2 {
+    width: fit-content;
+    display: inline-block;
+    border: none;
+    outline: none;
+}
+#output3 {
+    width: fit-content;
+    display: inline-block;
+    border: none;
+    outline: none;
+}
+
+/* alt1 */
+.alt1::after {
+    content: "30000";
+    color: #666;
+    font-family: var(--sf);
+    position: absolute;
+    right: 0;
+    bottom: -22px;
+}
+.alt1::before {
+    content: "1";
+    color: #666;
+    font-family: var(--sf);
+    position: absolute;
+    left: 0;
+    bottom: -22px;
+}
+/* alt2 */
+.alt2::after {
+    content: "60";
+    color: #666;
+    font-family: var(--sf);
+    position: absolute;
+    right: 0;
+    bottom: -22px;
+}
+.alt2::before {
+    content: "1";
+    color: #666;
+    font-family: var(--sf);
+    position: absolute;
+    left: 0;
+    bottom: -22px;
+}
+
+/* alt3 */
+.alt3::after {
+    content: "27%";
+    color: #666;
+    font-family: var(--sf);
+    position: absolute;
+    right: 0;
+    bottom: -22px;
+}
+.alt3::before {
+    content: "14%";
+    color: #666;
+    font-family: var(--sf);
+    position: absolute;
+    left: 0;
+    bottom: -22px;
+}
+.range-slider-my {
+    bottom: -10px;
+    left: -1px;
+    position: absolute;
+    width: calc(100% + 2px);
+}
+.rangeslider {
+    cursor: pointer;
+    display: block;
+    height: 25px;
+    position: relative;
+    width: 100%;
+}
+.rangeslider__handle {
+    -webkit-font-smoothing: subpixel-antialiased;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    background: url(https://abb-bank.az/img/icons/range-handle.svg) 50% no-repeat;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    cursor: pointer;
+    display: inline-block;
+    height: 20px;
+    position: absolute;
+    top: calc(50% + 2px);
+    transition: width .1s ease-in-out, height .1s ease-in-out, top .1s ease-in-out;
+    width: 20px;
+    will-change: width, height, top;
+    z-index: 3;
+}
+.range-slider-my {
+    bottom: -10px;
+    left: -1px;
+    position: absolute;
+    width: calc(100% + 2px);
+}
+#calculator {
+    padding-bottom: 100px;
+}
+#calculator>div {
+    margin: 0px 105px; 
+    padding:15px;
+}
+#calculator>div>h2 {
+    font-size: 36;
+    font-weight: 600;
+    margin-bottom: 3rem;
+    color: #262626;
+    font-family: var(--sf);
+}
+#creditbox div:nth-last-child(1) button {
+    padding: 10px 15px;
+}
+#creditbox div:nth-last-child(1) button a {
+    color: #fff;
+}
+#inps>div {
+    padding: 1.5rem;
+    margin-bottom: 3rem;
+    border: 2px solid #dee2e6;
+    border-radius: 5px;
+    position: relative;
+}
+#inps>div>div>span {
+    font-weight: 400;
+    padding: 0;
+    font-size: 18px;
+    font-family: var(--sf);
+    color: #6f7071;
+}
+#inps>div>div>div>span {
+    font-weight: 400;
+    padding: 0;
+    font-size: 18;
+    font-family: var(--sf);
+    color: #262626;
+}
+#inps>div input {
+    font-family: var(--sf);
+    text-align: right;
+    font-weight: 500;
+    font-size: 18;
+}
+.altyazi1>.slider {
+    position: absolute;
+}
+#odenis {
+    padding-bottom: 1.5rem;
+    /* border-bottom: 1px solid #666; */
+}
+#paysumline {
+    height: 1px;
+    width: 155px;
+    border-top: 1px solid #dedede;
+    border-color: #e4e4e4!important;
+    margin-top: 1.5rem;
+}
+
+#odenis hr {
+    width: 165px;
+}
+#monthly {
+    margin-bottom: 0.5rem;
+}
+#summary {
+    margin-bottom: 0.5rem;
+}
+#sum>div>span {
+    font-family: var(--sf);
+    font-weight: 600;
+    font-size: 40;
+}
+#odenis>div>div, #odenis>div>span {
+    font-family: var(--sf);
+    font-weight: 600;
+    font-size: 40;
+}
+#sum {
+    margin-right: 0;
+    margin-top: 1.5rem;    
+}
+#sum>div>div, #sum>div>p {
+    font-family: var(--sf);
+    font-weight: 600;
+    font-size: 40;
+}
+
+#calculator>.container>span {
+    font-family: var(--sf);
+    color: #7f7f7f;
+    font-size: 16px;
+    /* class="fm-sf mt-5 color-7f7f7f fs-16 d-none d-lg-block" */
+}
+#calculator button {
+    margin-top: 1rem;
+}
+#sums {
+    margin-left: 50;
+}
+@media  (max-width: 998px) {
+    #inps>div span {
+        font-size: 16;
+    }
+    #calculator>div {
+        margin: auto;
+    }
+    #creditbox {
+        flex-direction: column;
+    }
+    #sums {
+        display: flex;
+        flex-direction: column;
+        width: 100% !important;
+    }
+    #mebleg,#muddet,#faiz{
+        width: 100%;
+    }
+    #inps {
+        flex: inherit;
+        width: 100%;
+    }
+    #inps>div span {
+        padding-left:5px; ;
+    }
+    #paysum {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid #e4e4e4;
+    }
+    #paysum>div>div>div, #paysum>div>div>span {
+        font-size: 25px;
+    }
+    #monthly {
+        margin-bottom: 0;
+    }
+    #sum {
+        margin-top: 0;
+    }
+    #paysumline {
+        display: none;
+    }
+    #calculator>.container>span {
+        display: none;
+    }
+    #sums>span {
+        display: block;
+        font-size: 16px;
+        color: #7f7f7f;
+        font-family: var(--sf);
+        margin: 1.5rem 0 1rem 0;
+    }
+    #sums button {
+        width: 100%;
+    }
+    #sums {
+        margin-left: 0;
+    }
+    .altyazi1>div>div {
+        display: inline-flex;
+        margin-left: -90px;
+        align-items: center;
+    }
+    .altyazi1>div>div input {
+        background-color: transparent;
+    }
+    #inps>div>div>div span {
+        font-size: 15px;
+        padding-left: 5px;
+    }
+}
